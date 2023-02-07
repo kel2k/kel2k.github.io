@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Aouch</title>
+        <!-- Additional Link Web -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Additional Link CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- Web Icon -->
+        <link rel="icon" type="image/x-icon" href="fc183c76e59c7de7f0fb36217773d002.jpg">
+    </head>
+    <body>
+         <!-- Discord API -->
+
+        <div id="discord_menu">
+            <a href="https://discord.com/users/508158285480853514">
+                <img id="image" src="https://lanyard.cnrad.dev/api/397634289174315013" alt="Aouch">
+            </a>
+
+        <!-- Text -->
+
+        <div class="container">
+            <h1>Ho<span>la</span></h1>
+            <p>Halo anak anak anjing</p>
+        </div>
+
+        <!-- Audio -->
+        <audio src="baoncikadap.mp3" autoplay controls></audio>
+
+        <!-- P Text --> <!-- Do Not Delete -->
+        <div id="text">
+            
+        </div>
+
+        <!-- Button -->
+            <div id="button">
+                <button onclick="window.location.href='https://shopee.com.my/aouchsenpai';" class="btn" title="Shopee"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                <button onclick="window.location.href='https://steamcommunity.com/id/Ahkeat6954/';" class="btn" title="Steam"><i class="fa fa-steam-square" aria-hidden="true"></i></button>
+                <button onclick="window.location.href='https://open.spotify.com/'; " class="btn" title="Spotify"><i class="fa fa-spotify" aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+
+        <script type="text/javascript">
+            var i = 0, text;
+            text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur, expedita eum ab sapiente aliquid? Blanditiis quod dignissimos eligendi illum et repellendus iusto natus laborum voluptatem, porro ipsum totam praesentium!"
+        
+            function typing(){
+                if(i < text.length){
+                    document.getElementById("text").innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typing, 50);
+                }
+            }
+        typing();
+        </script> 
+        <script type="text/javascript" src="particles.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+        <script src="https://unpkg.com/kursor"></script>
+        <script>
+            new kursor({
+                type: 1,
+                removeDefaultCursor: true,
+                color: "#B7F0E7"
+            });
+        </script>
+    </body>
+</html>
+
+<!-- END -->

@@ -106,12 +106,12 @@ audio {
 }
 
 h1{
-  color: black;
+  color: rgb(255, 105, 78);
   opacity: 0.8;
 }
 
 span{
-  color: antiquewhite;
+  color: rgb(5, 5, 5);
 }
 
 p {

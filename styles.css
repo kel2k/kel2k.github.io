@@ -60,7 +60,7 @@ audio {
   align-items: center;
   padding-block: 16px;
 }
-
+                                                                                                           
 #playbtn {
   font-size: 15px;
   color: transparent;
@@ -89,7 +89,7 @@ audio {
   background-color: #24242424;
   overflow: hidden;
   left: var(--space);
-  right: var(--space);
+  right: var(--space);  
   top: var(--space);
   bottom: var(--space);
   position: absolute;

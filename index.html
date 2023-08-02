@@ -1,6 +1,75 @@
-
 <!DOCTYPE html>
-<html>
-    <h1>hello</h1>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kel</title>
+        <!-- Additional Link Web -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Additional Link CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- Web Icon -->
+        <link rel="icon" type="image/x-icon" href="fc183c76e59c7de7f0fb36217773d002.jpg">
+    </head>
+    <body>
+         <!-- Discord API -->
+
+        <div id="discord_menu">
+            <a href="https://discordapp.com/users/397634289174315013">
+                <img id="image" src= "https://lanyard.cnrad.dev/api/397634289174315013?theme=light&bg=FFFFFF&animated=true&hideDiscrim=false&borderRadius=30px&idleMessage=Probably%20doing%20something%20else..." alt="kel">
+               
+            </a>
+
+        <!-- Text -->
+
+        <div class="container">
+            <h1>Ho<span>la</span></h1>
+            <p>const games = ["FPS","MMORPG"];</p>
+        </div>
+
+        <!-- Audio -->
+        <audio src="crooked.mp3" autoplay controls></audio>
+        
+        <!-- P Text --> <!-- Do Not Delete -->
+        <div id="text">
+            
+        </div>
+
+        <!-- Button -->
+         <button onclick="window.location.href='https://open.spotify.com/user/ty1d4vdbmk18i5lca51ko9tjb?si=23380e5d92df409a'; " class="btn" title="Spotify"><i class="fa fa-spotify" aria-hidden="true"></i></button>
+         </div>
+
+        <!-- Scripts -->
+
+        <script type="text/javascript">
+            var i = 0, text;    
+            text = "Hello im kel, a web developer with below average skills"
+        
+            function typing(){
+                if(i < text.length){
+                    document.getElementById("text").innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typing, 50);
+                }
+            }
+        typing();
+        </script> 
+        <script type="text/javascript" src="particles.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+        <script src="https://unpkg.com/kursor"></script>
+        <script>
+            new kursor({
+                type: 1,
+                removeDefaultCursor: true,
+                color: "#B7F0E7"
+            });
+            
+        </script>
 </html>
 
+<!-- END -->

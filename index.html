@@ -14,7 +14,14 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         <!-- Web Icon -->
         <link rel="icon" type="image/x-icon" href="fc183c76e59c7de7f0fb36217773d002.jpg">
-         <style>
+           <style>
+        h1 span {
+            border-right: 2px solid black;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(20), blink-caret 0.5s step-end infinite alternate;
+        }
+
         @keyframes typing {
             from { width: 0; }
             to { width: 100%; }
@@ -23,13 +30,6 @@
         @keyframes blink-caret {
             from, to { border-right-color: transparent; }
             50% { border-right-color: black; }
-        }
-
-        h1 span {
-            border-right: 2px solid black;
-            white-space: nowrap;
-            overflow: hidden;
-            animation: typing 2s steps(20), blink-caret 0.5s step-end infinite alternate;
         }
     </style>
     </head>
@@ -84,7 +84,29 @@
                 removeDefaultCursor: true,
                 color: "#B7F0E7"
             });
-            
+                const textToType = "Hola";
+        const spanElement = document.getElementById("typedText");
+
+        function typeText(index) {
+            spanElement.textContent = textToType.slice(0, index);
+            if (index < textToType.length) {
+                setTimeout(() => typeText(index + 1), 100);
+            } else {
+                setTimeout(() => eraseText(textToType.length - 1), 1000);
+            }
+        }
+
+        function eraseText(index) {
+            spanElement.textContent = textToType.slice(0, index);
+            if (index > 0) {
+                setTimeout(() => eraseText(index - 1), 100);
+            } else {
+                setTimeout(() => typeText(0), 1000);
+            }
+        }
+
+        // Start the typing animation
+        typeText(0);
         </script>
 </html>
 

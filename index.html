@@ -63,7 +63,7 @@
 
         <script type="text/javascript">
             var i = 0, text;    
-            text = "Hello im kel, a web developer with below average skills"
+            text = "inconsistent web developer with below average skills"
         
             function typing(){
                 if(i < text.length){
@@ -84,29 +84,29 @@
                 removeDefaultCursor: true,
                 color: "#B7F0E7"
             });
-                const textToType = "Hola";
-         const spanElement = document.getElementById('typedText');
+                const textToType = "Hello, im kel";        
+    const spanElement = document.getElementById('typedText');
 
-        function typeText(index) {
-            spanElement.textContent = textToType.slice(0, index);
-            if (index < textToType.length) {
-                setTimeout(() => typeText(index + 1), 100);
-            } else {
-                setTimeout(() => eraseText(textToType.length - 1), 1000);
-            }
+    function typeText(index) {
+        spanElement.textContent = textToType.slice(0, index);
+        if (index < textToType.length) {
+            setTimeout(() => typeText(index + 1), 150); // Adjusted delay to 150 milliseconds
+        } else {
+            setTimeout(() => eraseText(textToType.length - 1), 1500); // Longer delay before erasing
         }
+    }
 
-        function eraseText(index) {
-            spanElement.textContent = textToType.slice(0, index);
-            if (index > 0) {
-                setTimeout(() => eraseText(index - 1), 100);
-            } else {
-                setTimeout(() => typeText(0), 1000);
-            }
+    function eraseText(index) {
+        spanElement.textContent = textToType.slice(0, index);
+        if (index > 0) {
+            setTimeout(() => eraseText(index - 1), 150); // Adjusted delay to 150 milliseconds
+        } else {
+            setTimeout(() => typeText(0), 1500); // Longer delay before typing again
         }
+    }
 
-        // Start the typing animation
-        typeText(0);
+    // Start the typing animation
+    typeText(0);
         </script>
 </html>
 

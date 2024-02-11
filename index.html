@@ -43,7 +43,7 @@
         <!-- Text -->
 
         <div class="container">
-            <h1>Ho<span>la</span></h1>
+           <h1><span id="typedText"></span></h1>
             <p>const games = ["FPS","MMORPG"];</p>
         </div>
 
@@ -85,7 +85,7 @@
                 color: "#B7F0E7"
             });
                 const textToType = "Hola";
-        const spanElement = document.getElementById("typedText");
+         const spanElement = document.getElementById('typedText');
 
         function typeText(index) {
             spanElement.textContent = textToType.slice(0, index);
